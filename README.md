@@ -2,7 +2,7 @@
 
 This is a clone of the mini-game Sigmar's Garden from the game [Opus Magnum](http://www.zachtronics.com/opus-magnum/).
 
-You can [play it here](https://chesterz184.github.io/sigmar-garden/). Works better on modern browsers.
+You can [play it here](https://TheRedBerrys.github.io/sigmar-garden/). Works better on modern browsers.
 
 All textures were exported from the original game. Thanks to the devs for such a great game!
 
