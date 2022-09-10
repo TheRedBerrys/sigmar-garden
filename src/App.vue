@@ -5,7 +5,8 @@
     </transition-group>
 
     <div class="board-footer" :style="'font-size: ' + 38.1 / 2.6 + 'px'">
-      <button :style="'font-size: ' + 38.1 / 2.6 + 'px'" class="btn start" @click="newGame">NEW GAME</button>
+      <button :style="'font-size: ' + 38.1 / 2.6 + 'px'" class="btn start left" @click="newGame">NEW</button>
+      <button :style="'font-size: ' + 38.1 / 2.6 + 'px'" class="btn start right" @click="restart">SAME</button>
       <div class="status-bar">
         <status :status="status.salt"></status>
         <span class="status-divide">|</span>
@@ -31,8 +32,6 @@
     </div>
   </div>
 
-  <button class="btn solve" @click="solve">SOLVE</button>
-  <button class="btn solve" @click="restart">RESTART</button>
   <img class="help-content" v-if="showHelp" src="./assets/help_content.jpg" alt="help content" @click="showHelp = false" />
 </template>
 
@@ -209,8 +208,13 @@ h5 {
 }
 .btn.start {
   height: 100%;
-  width: 15.8%;
-  margin: 0 0.7%;
+  width: 7.9%;
+}
+.btn.left {
+  margin-left: 0.7%
+}
+.btn.right {
+  margin-right: 0.7%
 }
 .btn.start.disabled {
   filter: brightness(0.5);
@@ -218,11 +222,6 @@ h5 {
 .btn.start.disabled:hover {
   color: #111;
   text-shadow: none;
-}
-.btn.solve {
-  margin: 0 10px;
-  width: 100px;
-  height: 40px;
 }
 
 .status-bar {
